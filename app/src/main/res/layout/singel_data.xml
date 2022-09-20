@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flowmenu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_baseline_more_vert_24"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/viewavatar"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:text="@string/app_name"
+             android:id="@+id/txt_name"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/bookauthor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_name"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:layout_marginLeft="20dp"
+            android:text="Book Author"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bookshell"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/bookauthor"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:layout_marginLeft="20dp"
+            android:text="Book Shell"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/addate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/bookshell"
+            android:layout_toRightOf="@+id/viewavatar"
+            android:layout_marginLeft="20dp"
+            android:text="Added Date"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    android:layout_margin="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flowmenus"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_baseline_more_vert_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+             android:text="Person"
+            android:id="@+id/personname"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/fathername"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/personname"
+             android:layout_marginLeft="20dp"
+            android:text="Father name"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/fathername"
+             android:layout_marginLeft="20dp"
+            android:text="Contact number"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/contact"
+            android:layout_marginLeft="20dp"
+            android:text="adress"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bookpick"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/adress"
+            android:layout_marginLeft="20dp"
+            android:text="Picked book"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/bookpick"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:text="Added Date"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
